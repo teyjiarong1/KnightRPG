@@ -68,7 +68,7 @@ public class storageManager {
     public void createData(){
         this.data = YamlConfiguration.loadConfiguration(dataFile);
 
-        this.data.set("職業", "Bitch");
+        this.data.set("職業", "初心者");
         this.data.set("等級" , Integer.valueOf(1));
         this.data.set("經驗", Double.valueOf(0));
 

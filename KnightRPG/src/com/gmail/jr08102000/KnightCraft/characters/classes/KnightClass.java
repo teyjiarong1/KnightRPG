@@ -16,9 +16,11 @@ public class KnightClass {
 
     private int baseMaxHealth;
     private int baseMaxMana;
+    private int damage;
 
     private double maxHealthPerLevel;
     private double maxManaPerLevel;
+    private double DamagePerLevel;
 
     public KnightClass(String name , FileConfiguration config){
         this.name = name;
@@ -59,6 +61,10 @@ public class KnightClass {
     {
         return this.baseMaxMana;
     }
+    public int getDamage()
+    {
+    	return this.damage;
+    }
     public double getMaxHealthPerLevel()
     {
         return this.maxHealthPerLevel;
@@ -66,5 +72,9 @@ public class KnightClass {
     public double getMaxManaPerLevel()
     {
         return this.maxManaPerLevel;
+    }
+    public double getDamagePerLevel()
+    {
+    	return this.DamagePerLevel;
     }
 }
