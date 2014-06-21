@@ -3,7 +3,6 @@ package com.gmail.jr08102000.KnightCraft.commands;
 import com.gmail.jr08102000.KnightCraft.Knight;
 import com.gmail.jr08102000.KnightCraft.characters.KnightCharacters;
 import com.gmail.jr08102000.KnightCraft.storage.storageManager;
-import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
@@ -11,7 +10,7 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
 /**
- * 嘉榮自製 6/21/2014..
+ * @author jr0810 6/21/2014..
  */
 public class LevelCommand implements CommandExecutor{
 
@@ -20,19 +19,9 @@ public class LevelCommand implements CommandExecutor{
         if(cmd.getName().equalsIgnoreCase("lv")){
             if(sender instanceof Player){
                 Player player = (Player)sender;
-                if(args.length == 0){
                     ShowGUI(player);
-                }
-                if(args.length == 1) {
-                    Player target = Bukkit.getPlayer(args[0]);
-
-                    if(target.isOnline())
-                        ShowGUI(target);
-                    else
-                        player.sendMessage("玩家沒上線，你不能查看他的資料");
-                }
-                else
-                    return false;
+            
+               
             }
             else
                 plugin.debug("這個指令只有在遊戲里才能打的指令！");

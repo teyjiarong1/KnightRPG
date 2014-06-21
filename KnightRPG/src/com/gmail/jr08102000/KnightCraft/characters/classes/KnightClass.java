@@ -3,7 +3,7 @@ package com.gmail.jr08102000.KnightCraft.characters.classes;
 import org.bukkit.configuration.file.FileConfiguration;
 
 /**
- * å˜‰æ¦®è‡ªè£½  6/20/2014.
+ *  @author jr0810 6/20/2014.
  */
 public class KnightClass {
 
@@ -22,14 +22,14 @@ public class KnightClass {
 
     public KnightClass(String name , FileConfiguration config){
         this.name = name;
-        this.description = config.getString(name + ".ç°¡ä»‹");
-        this.maxLevel = config.getInt(name +".æœ€é«˜ç­‰ç´š");
-        this.experience = config.getDouble(name + ".ç¶“é©—");
-        this.experienceModifier = config.getDouble(name + ".ç¶“é©—--è®ŠåŒ–");
-        this.baseMaxHealth = config.getInt(name + ".è¡€é‡");
-        this.maxHealthPerLevel = config.getDouble(name + ".è¡€é‡-æ¯ç­‰ç´š-å¢åŠ ");
-        this.baseMaxMana = config.getInt(name + ".é­”åŠ›");
-        this.maxManaPerLevel = config.getDouble(name + ".é­”åŠ›-æ¯ç­‰ç´š-å¢åŠ ");
+        this.description = config.getString(name + ".Â²¤¶");
+        this.maxLevel = config.getInt(name +".³Ì°ªµ¥¯Å");
+        this.experience = config.getDouble(name + ".¸gÅç");
+        this.experienceModifier = config.getDouble(name + ".¸gÅç-¨Cµ¥-¼W¥[");
+        this.baseMaxHealth = config.getInt(name + ".¦å¶q");
+        this.maxHealthPerLevel = config.getDouble(name + ".¦å¶q-¨Cµ¥-¼W¥[");
+        this.baseMaxMana = config.getInt(name + ".Å]¤O");
+        this.maxManaPerLevel = config.getDouble(name + ".Å]¤O-¨Cµ¥-¼W¥[");
     }
 
     public String getName()

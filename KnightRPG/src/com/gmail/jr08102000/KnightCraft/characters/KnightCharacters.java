@@ -4,7 +4,7 @@ import com.gmail.jr08102000.KnightCraft.storage.storageManager;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 /**
- * 嘉榮自製 20/6/2014
+ * @author jr0810 20/6/2014
  */
 public class KnightCharacters {
 

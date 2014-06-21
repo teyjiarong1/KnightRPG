@@ -9,7 +9,7 @@ import  com.gmail.jr08102000.KnightCraft.storage.storageManager;
 import com.gmail.jr08102000.KnightCraft.commands.*;
 
 /**
- * 嘉榮自製 20/6/2014
+ * @author Jr0810 20/6/2014
  */
 public class Knight extends JavaPlugin{
 
@@ -20,7 +20,6 @@ public class Knight extends JavaPlugin{
     }
 
     public void onEnable(){
-        this.plugin = this;
         registerCommands();
         registerListener();
         loadConfigFile();

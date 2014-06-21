@@ -1,7 +1,7 @@
 package com.gmail.jr08102000.KnightCraft.configuration;
 
 /**
- * 嘉榮自製 6/20/2014.
+ * @author jr0810 6/20/2014.
  */
 public class configClasses extends configLoader{
 

@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- * ¹Åºa¦Û»s 6/20/2014.
+ * @author jr0810 6/20/2014.
  */
 public class storageManager {
 
