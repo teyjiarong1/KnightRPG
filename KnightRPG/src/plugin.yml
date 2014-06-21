@@ -1,0 +1,6 @@
+name: KnightCraft
+main: com.gmail.jr08102000.KnightCraft.Knight
+version: 1.0
+commands:
+  lv:
+    description: Check Your GUI or Your Friends GUI
