@@ -19,10 +19,12 @@ public class KnightClass {
     private int baseMaxHealth;
     private int baseMaxMana;
     private int damage;
+    private int projDamage;
 
     private double maxHealthPerLevel;
     private double maxManaPerLevel;
     private double DamagePerLevel;
+    private double projDamagePerLevel;
 
     public KnightClass(String name){
     	FileConfiguration config = configClasses.getInstance().config;
@@ -35,6 +37,12 @@ public class KnightClass {
         this.maxHealthPerLevel = config.getDouble(name + ".血量-每等-增加");
         this.baseMaxMana = config.getInt(name + ".魔力");
         this.maxManaPerLevel = config.getDouble(name + ".魔力-每等-增加");
+        
+        this.damage = config.getInt(name + ".近戰攻擊力");
+        this.projDamage = config.getInt(name + ".遠戰攻擊力");
+        
+        this.DamagePerLevel = config.getDouble(name + ".近戰攻擊力-每等-增加");
+        this.projDamagePerLevel = config.getDouble(name + "遠戰攻擊力-每等-增加");
     }
 
     public String getName()
@@ -68,6 +76,10 @@ public class KnightClass {
     {
     	return this.damage;
     }
+    public int getProjDamage()
+    {
+    	return this.projDamage;
+    }
     public double getMaxHealthPerLevel()
     {
         return this.maxHealthPerLevel;
@@ -79,5 +91,9 @@ public class KnightClass {
     public double getDamagePerLevel()
     {
     	return this.DamagePerLevel;
+    }
+    public double getProjDamagePerLevel()
+    {
+    	return this.projDamagePerLevel;
     }
 }

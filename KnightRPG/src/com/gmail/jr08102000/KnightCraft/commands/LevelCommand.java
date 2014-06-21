@@ -35,7 +35,6 @@ public class LevelCommand implements CommandExecutor{
     public void ShowGUI(Player player){
         storageManager sm = new storageManager(player.getName());
         KnightCharacters sc = new KnightCharacters(sm);
-        String classes = sc.getClasses();
 
         player.sendMessage(ChatColor.GOLD + "" + ChatColor.BOLD + "=======[ " + ChatColor.YELLOW + "ÃM¤hRPG(jr0810¦Û»s)" + ChatColor.GOLD + ""+ ChatColor.BOLD
          + " ]=======");

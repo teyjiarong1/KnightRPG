@@ -21,6 +21,7 @@ public class KnightClassManager {
 
 		return getMaxHealth;
 	}
+	
 
 	public int getClassesMaxMana() {
 		int maxMana = knightClass.getBaseMaxMana();
@@ -40,6 +41,17 @@ public class KnightClassManager {
 
 		return getDamage;
 	}
+	
+	public int getClassesProjDamage(){
+		int ProjDamage = knightClass.getProjDamage();
+		
+		double modifier = knightClass.getProjDamagePerLevel();
+		
+		int getProjDamage = (int)(ProjDamage + ((this.PlayerLevel - 1) * modifier));
+		
+		return getProjDamage;
+	}
+	
 
 	public double getExperience() {
 		double exp = knightClass.getExperience();

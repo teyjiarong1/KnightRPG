@@ -2,7 +2,6 @@ package com.gmail.jr08102000.KnightCraft.storage;
 
 import com.gmail.jr08102000.KnightCraft.Knight;
 import org.bukkit.Bukkit;
-import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 
 import java.io.File;

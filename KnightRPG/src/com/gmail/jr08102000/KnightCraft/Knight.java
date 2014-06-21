@@ -1,12 +1,16 @@
 package com.gmail.jr08102000.KnightCraft;
 
 import com.gmail.jr08102000.KnightCraft.configuration.configClasses;
+import com.gmail.jr08102000.KnightCraft.configuration.configMain;
 import com.gmail.jr08102000.KnightCraft.listener.K_PlayerListener;
+
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
+
 import  com.gmail.jr08102000.KnightCraft.storage.storageManager;
 import com.gmail.jr08102000.KnightCraft.commands.*;
+import com.nisovin.magicspells.MagicSpells;
 
 /**
  * @author Jr0810 20/6/2014
@@ -18,12 +22,20 @@ public class Knight extends JavaPlugin{
     public void debug(String message) {
         getLogger().info("[Debug] " + message);
     }
+    
+    public void loadAPIPlugin(){
+    	if(MagicSpells.plugin == null){
+    		debug("請下載MagicSpells在伺服器，因為伺服器必須需要MagicSpells才能運作!");
+    	}
+    }
 
     public void onEnable(){
+    	
         registerCommands();
         registerListener();
         loadConfigFile();
         setUpStorage();
+        loadAPIPlugin();
     }
     public void onDisable(){
 
@@ -39,6 +51,7 @@ public class Knight extends JavaPlugin{
     public void loadConfigFile(){
 
         configClasses.getInstance();
+        configMain.getInstance();
     }
     public void setUpStorage(){
         storageManager sm = new storageManager();
