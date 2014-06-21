@@ -2,6 +2,8 @@ package com.gmail.jr08102000.KnightCraft.characters.classes;
 
 import org.bukkit.configuration.file.FileConfiguration;
 
+import com.gmail.jr08102000.KnightCraft.configuration.configClasses;
+
 /**
  *  @author jr0810 6/20/2014.
  */
@@ -22,7 +24,8 @@ public class KnightClass {
     private double maxManaPerLevel;
     private double DamagePerLevel;
 
-    public KnightClass(String name , FileConfiguration config){
+    public KnightClass(String name){
+    	FileConfiguration config = configClasses.getInstance().config;
         this.name = name;
         this.description = config.getString(name + ".Â²¤¶");
         this.maxLevel = config.getInt(name +".³Ì°ªµ¥¯Å");

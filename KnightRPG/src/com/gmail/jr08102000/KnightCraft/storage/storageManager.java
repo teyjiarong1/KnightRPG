@@ -71,6 +71,12 @@ public class storageManager {
         this.data.set("職業", "初心者");
         this.data.set("等級" , Integer.valueOf(1));
         this.data.set("經驗", Double.valueOf(0));
+        this.data.set("屬性.力量", Integer.valueOf(0));
+        this.data.set("屬性.敏捷", Integer.valueOf(0));
+        this.data.set("屬性.體質", Integer.valueOf(0));
+        this.data.set("屬性.智慧", Integer.valueOf(0));
+        this.data.set("屬性.點數", Integer.valueOf(3));
+        
 
     }
 

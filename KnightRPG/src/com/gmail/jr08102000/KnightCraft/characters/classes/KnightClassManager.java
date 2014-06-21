@@ -4,10 +4,10 @@ public class KnightClassManager {
 
 	private KnightClass knightClass;
 	private int PlayerLevel;
-	private int playerExp;
+	private double playerExp;
 
 	public KnightClassManager(KnightClass knightClass, int PlayerLevel,
-			int PlayerExp) {
+			double PlayerExp) {
 		this.knightClass = knightClass;
 		this.PlayerLevel = PlayerLevel;
 		this.playerExp = PlayerExp;
